@@ -32,11 +32,11 @@ export default function Intro() {
           </div>
           <div className="relative rounded-xl overflow-hidden card-shadow group aspect-[4/3] lg:aspect-auto lg:h-full">
             <Image
-              alt="Drain inspection equipment"
+              alt="Drainage engineer reviewing live CCTV drain survey footage on a tablet"
               className="object-cover transform group-hover:scale-105 transition-transform duration-500"
               fill
               sizes="(min-width: 1024px) 50vw, 100vw"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrdqUNkRwZWl-9vdfGWkkxcuBS4alAapxD_weppJR5ZkHUnH9T3aobnDJ69XY3mAOpCC7Hojg9-AdOool-4_j6skFAMgElUFs1CSKvGc5Q7udr-0jDUutHLEj0N5c4G9s3DM0iGH8NcuEKOfBo5ufRpzRIoxnQzRhM_VQoVm5z3Tcso2W0NjmiOpRRiNkYmaKF3Cm52KcprFniexygUkeRXVCXE9CETD5wsXeqazQY7Qn2BgmyfX0YMg"
+              src="/images/cctv-intro.webp"
             />
             <div className="absolute inset-0 bg-primary-container/10 group-hover:bg-transparent transition-colors duration-300" />
           </div>

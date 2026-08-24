@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Icon from "./Icon";
 import { SERVICES } from "@/lib/constants";
 
@@ -16,33 +17,45 @@ export default function Services() {
           {SERVICES.map((service) => (
             <div
               key={service.title}
-              className={`rounded-xl p-6 card-shadow hover:-translate-y-1 transition-transform duration-300 border border-outline-variant/30 flex flex-col h-full ${
+              className={`rounded-xl overflow-hidden card-shadow hover:-translate-y-1 transition-transform duration-300 border border-outline-variant/30 flex flex-col h-full ${
                 service.highlight ? "bg-primary-container text-on-primary" : "bg-surface"
               }`}
             >
-              <div
-                className={`w-14 h-14 rounded-lg flex items-center justify-center mb-4 ${
-                  service.highlight
-                    ? "bg-secondary-container/20 text-secondary-container"
-                    : "bg-primary-container/5 text-primary-container"
-                }`}
-              >
-                <Icon name={service.icon} className="w-8 h-8" />
+              <div className="relative aspect-[4/3] w-full">
+                <Image
+                  alt={service.imageAlt}
+                  src={service.image}
+                  width={service.imageWidth}
+                  height={service.imageHeight}
+                  className="w-full h-full object-cover"
+                  sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
+                />
               </div>
-              <h3
-                className={`font-headline-md text-headline-md mb-3 ${
-                  service.highlight ? "text-on-primary" : "text-on-surface"
-                }`}
-              >
-                {service.title}
-              </h3>
-              <p
-                className={`font-body-md text-body-md flex-grow ${
-                  service.highlight ? "text-on-primary/80" : "text-on-surface-variant"
-                }`}
-              >
-                {service.description}
-              </p>
+              <div className="p-6 flex flex-col flex-grow">
+                <div
+                  className={`w-14 h-14 rounded-lg flex items-center justify-center mb-4 ${
+                    service.highlight
+                      ? "bg-secondary-container/20 text-secondary-container"
+                      : "bg-primary-container/5 text-primary-container"
+                  }`}
+                >
+                  <Icon name={service.icon} className="w-8 h-8" />
+                </div>
+                <h3
+                  className={`font-headline-md text-headline-md mb-3 ${
+                    service.highlight ? "text-on-primary" : "text-on-surface"
+                  }`}
+                >
+                  {service.title}
+                </h3>
+                <p
+                  className={`font-body-md text-body-md flex-grow ${
+                    service.highlight ? "text-on-primary/80" : "text-on-surface-variant"
+                  }`}
+                >
+                  {service.description}
+                </p>
+              </div>
             </div>
           ))}
         </div>

@@ -26,6 +26,10 @@ export type ServiceCard = {
   icon: string;
   title: string;
   description: string;
+  image: string;
+  imageAlt: string;
+  imageWidth: number;
+  imageHeight: number;
   highlight?: boolean;
 };
 
@@ -35,48 +39,80 @@ export const SERVICES: ServiceCard[] = [
     title: "Blocked Drains",
     description:
       "Fast, effective clearing of external drains and main sewer lines using advanced techniques.",
+    image: "/images/service-blocked-drains.webp",
+    imageAlt: "Technician clearing a blocked exterior drain with drain rods",
+    imageWidth: 841,
+    imageHeight: 673,
   },
   {
     icon: "tsunami",
     title: "Water Jetting",
     description:
       "High-pressure water jetting to remove stubborn blockages, scale, and fat build-up efficiently.",
+    image: "/images/service-water-jetting.webp",
+    imageAlt: "High-pressure water jetting machine clearing a drain",
+    imageWidth: 841,
+    imageHeight: 673,
   },
   {
     icon: "videocam",
     title: "CCTV Surveys",
     description:
       "Detailed camera inspections to identify the root cause of recurring issues without excavation.",
+    image: "/images/service-cctv-surveys.webp",
+    imageAlt: "CCTV drain survey camera and monitor at an open manhole",
+    imageWidth: 869,
+    imageHeight: 652,
   },
   {
     icon: "bathroom",
     title: "Toilets & Sinks",
     description:
       "Rapid response for overflowing toilets, blocked sinks, baths, and internal pipework issues.",
+    image: "/images/service-toilets-sinks.webp",
+    imageAlt: "Plumber repairing pipework under a bathroom sink",
+    imageWidth: 841,
+    imageHeight: 673,
   },
   {
     icon: "build",
     title: "Drain Repairs",
     description:
       "Professional repair of collapsed, cracked, or damaged pipework to restore full flow.",
+    image: "/images/service-drain-repairs.webp",
+    imageAlt: "Technician repairing a cracked drain pipe at a UK home",
+    imageWidth: 869,
+    imageHeight: 652,
   },
   {
     icon: "layers",
     title: "No-Dig Repairs",
     description:
       "Trenchless patch repairs and full relining to fix pipes without disruptive digging.",
+    image: "/images/service-no-dig-repairs.webp",
+    imageAlt: "Trenchless drain repair equipment at an open manhole",
+    imageWidth: 922,
+    imageHeight: 614,
   },
   {
     icon: "home",
     title: "Homebuyer Surveys",
     description:
       "Pre-purchase drainage inspections to protect your investment and avoid hidden costs.",
+    image: "/images/service-homebuyer-surveys.webp",
+    imageAlt: "Technician conducting a homebuyer drain survey outside a UK home",
+    imageWidth: 922,
+    imageHeight: 614,
   },
   {
     icon: "business",
     title: "Commercial",
     description:
       "Tailored maintenance contracts and emergency response for commercial premises.",
+    image: "/images/service-commercial.webp",
+    imageAlt: "Technician performing commercial drain jetting outside a business premises",
+    imageWidth: 869,
+    imageHeight: 652,
     highlight: true,
   },
 ];
