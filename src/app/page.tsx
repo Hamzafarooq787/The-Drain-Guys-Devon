@@ -1,0 +1,27 @@
+import Header from "@/components/Header";
+import Hero from "@/components/Hero";
+import EmergencyStrip from "@/components/EmergencyStrip";
+import Intro from "@/components/Intro";
+import Services from "@/components/Services";
+import WhyUs from "@/components/WhyUs";
+import Areas from "@/components/Areas";
+import MobileNav from "@/components/MobileNav";
+import Footer from "@/components/Footer";
+
+export default function Home() {
+  return (
+    <>
+      <Header />
+      <main>
+        <Hero />
+        <EmergencyStrip />
+        <Intro />
+        <Services />
+        <WhyUs />
+        <Areas />
+      </main>
+      <MobileNav />
+      <Footer />
+    </>
+  );
+}
