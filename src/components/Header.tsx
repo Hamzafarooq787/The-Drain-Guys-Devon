@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import Icon from "./Icon";
 import { NAV_LINKS, PHONE_DISPLAY, PHONE_NUMBER } from "@/lib/constants";
 
@@ -10,11 +11,15 @@ export default function Header() {
   return (
     <header className="bg-surface/95 backdrop-blur-sm w-full top-0 sticky z-50 shadow-sm">
       <div className="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto h-16 md:h-20">
-        <a
-          className="text-lg md:text-headline-md font-headline-md font-extrabold text-primary hover:text-secondary-container transition-colors duration-200"
-          href="#home"
-        >
-          The Drain Guys Devon
+        <a className="shrink-0" href="#home">
+          <Image
+            alt="The Drain Guys Devon"
+            src="/images/logo.webp"
+            width={1220}
+            height={337}
+            priority
+            className="h-9 md:h-11 w-auto"
+          />
         </a>
 
         <nav className="hidden md:flex items-center gap-6">
