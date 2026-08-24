@@ -19,6 +19,8 @@ import {
   Menu,
   X,
   ClipboardList,
+  Plus,
+  Minus,
   type LucideIcon,
 } from "lucide-react";
 
@@ -43,6 +45,8 @@ const ICONS: Record<string, LucideIcon> = {
   menu: Menu,
   close: X,
   request_quote: ClipboardList,
+  add: Plus,
+  remove: Minus,
 };
 
 type IconProps = {
