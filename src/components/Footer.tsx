@@ -40,7 +40,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="border-t border-outline-variant/20 py-6 px-margin-mobile md:px-margin-desktop text-center font-body-md text-body-md text-on-primary/60">
-        © 2024 The Drain Guys Devon. All rights reserved. Registered in England & Wales.
+        © 2026 The Drain Guys Devon. All rights reserved. Registered in England & Wales.
       </div>
     </footer>
   );
