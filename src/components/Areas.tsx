@@ -26,11 +26,11 @@ export default function Areas() {
           </div>
           <div className="order-1 lg:order-2 rounded-xl overflow-hidden card-shadow bg-surface-container-low flex items-center justify-center p-4">
             <Image
-              alt="Map of Devon service areas"
+              alt="Map of Devon showing The Drain Guys Devon service areas"
               className="w-full h-auto object-contain max-h-[400px]"
-              width={600}
-              height={400}
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuACddwAumtiQfTemRaBwBLXrfktPWAIhFWLRJ39Q380NZa3uAQKWXLiGzmY2oNZOp4ids9yO_t1vD-CY_wngtR23_jJK5OPyyQ4m2rB5rg0JZrfgihqgqbr4n_2E2aKvJ-OTGiIooJnCORp7P5zjhs-eoaZ99mwB_GVxAFZS3MMB_WXuz0HtibQK0HBF5cB6xZwoxhxjNmCmMetHxvs-K842ZJnNVqD6NTeum7UQJc2xCSD9nDJQ1qsSg"
+              width={922}
+              height={614}
+              src="/images/devon-map.webp"
             />
           </div>
         </div>

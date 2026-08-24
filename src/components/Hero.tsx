@@ -14,12 +14,12 @@ export default function Hero() {
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-primary-container/80 z-10" />
         <Image
-          alt="Drainage expert at work"
+          alt="Drainage technician clearing an exterior drain on a UK driveway"
           className="object-cover object-center"
           fill
           priority
           sizes="100vw"
-          src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuHkdvtiNSutnmL-NnOJqRLGrAJwpiCWJ7vmEkPrTyWPDUDnf-m9ojHLXtGIoZ3gZFqoLzzi53vD0vvAtSuBSDIR4oO48sz2IoN8N9uToKL_q3fDfzPWtDO3D00YsM26MsvLBPOeadqBj0tvTT4YgCEC1woTat50VftgjR5jEFXzEKmSYXFDhmFnD1eqbJ9RzesTcIdcdvZ4wPcIaZXZBxPsoEpXuDdtN-1ZNbkZoN04vxUfND4DbDhA"
+          src="/images/hero.webp"
         />
       </div>
 
