@@ -14,19 +14,49 @@ const manrope = Manrope({
   variable: "--font-manrope",
 });
 
+const SITE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL ??
+  (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "http://localhost:3000");
+
+const TITLE = "Drain Unblocking & Drain Repairs Devon | The Drain Guys Devon";
+const DESCRIPTION =
+  "Professional drain unblocking, CCTV drain surveys, and drain repairs across Devon. 24/7 emergency response for residential and commercial properties.";
+
 export const metadata: Metadata = {
-  title: "Drain Unblocking & Drain Repairs Devon | The Drain Guys Devon",
-  description:
-    "Professional drain unblocking, CCTV drain surveys, and drain repairs across Devon. 24/7 emergency response for residential and commercial properties.",
+  metadataBase: new URL(SITE_URL),
+  title: TITLE,
+  description: DESCRIPTION,
+  openGraph: {
+    title: TITLE,
+    description: DESCRIPTION,
+    url: SITE_URL,
+    siteName: "The Drain Guys Devon",
+    locale: "en_GB",
+    type: "website",
+    images: [
+      {
+        url: "/images/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "The Drain Guys Devon — Fast Drain Unblocking & Repairs Across Devon",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: TITLE,
+    description: DESCRIPTION,
+    images: ["/images/og-image.png"],
+  },
 };
 
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   name: "The Drain Guys Devon",
-  image: "",
-  "@id": "",
-  url: "",
+  image: `${SITE_URL}/images/logo.webp`,
+  "@id": SITE_URL,
+  url: SITE_URL,
   telephone: "01632960245",
   address: {
     "@type": "PostalAddress",

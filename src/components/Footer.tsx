@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const SERVICE_LINKS = ["Emergency Blockages", "CCTV Surveys", "Drain Repairs"];
 const LEGAL_LINKS = ["Privacy Policy", "Terms of Service"];
 
@@ -6,8 +8,13 @@ export default function Footer() {
     <footer className="bg-primary text-on-primary w-full pb-24 md:pb-0">
       <div className="py-12 md:py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-4 gap-gutter">
         <div className="col-span-1 md:col-span-2">
-          <div className="text-headline-md font-headline-md font-bold text-secondary-fixed mb-4">
-            The Drain Guys Devon
+          <div className="flex items-center gap-3 mb-4">
+            <span className="bg-white rounded-full p-1.5 shrink-0">
+              <Image alt="" src="/images/icon-source.webp" width={327} height={343} className="w-8 h-8" />
+            </span>
+            <span className="text-headline-md font-headline-md font-bold text-secondary-fixed">
+              The Drain Guys Devon
+            </span>
           </div>
           <p className="font-body-md text-body-md text-on-primary/80 mb-6 max-w-sm">
             Professional, reliable, and fast drain unblocking and repair services across the
