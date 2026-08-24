@@ -13,7 +13,10 @@ export default function QuickQuoteForm() {
   }
 
   return (
-    <div className="bg-surface text-on-surface rounded-xl p-6 md:p-8 card-shadow relative z-30">
+    <div
+      id="quick-quote-form"
+      className="bg-surface text-on-surface rounded-xl p-6 md:p-8 card-shadow relative z-30"
+    >
       <h3 className="font-headline-md text-headline-md mb-6">Quick Quote</h3>
 
       {submitted ? (

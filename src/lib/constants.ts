@@ -140,3 +140,46 @@ export const WHY_US: WhyUsItem[] = [
     description: "Quality workmanship backed by strong service guarantees.",
   },
 ];
+
+export type FAQItem = {
+  question: string;
+  answer: string;
+};
+
+export const FAQS: FAQItem[] = [
+  {
+    question: "How quickly can you respond to a blocked drain emergency?",
+    answer:
+      "We offer a 24/7 emergency response across Devon. In most cases we can have an engineer on-site the same day, and often within a couple of hours for urgent call-outs.",
+  },
+  {
+    question: "How much does drain unblocking cost?",
+    answer:
+      "Every job gets a clear, upfront quote before any work begins — no hidden fees. Pricing depends on the type of blockage and access, but we always confirm the cost with you first.",
+  },
+  {
+    question: "Do you offer CCTV drain surveys?",
+    answer:
+      "Yes. Our HD CCTV surveys let us pinpoint the exact cause and location of a problem without any excavation, and you'll get a full report with footage.",
+  },
+  {
+    question: "Are you available for emergencies outside normal working hours?",
+    answer:
+      "Yes, our emergency team operates 24 hours a day, 7 days a week, including evenings, weekends, and bank holidays, for both residential and commercial customers.",
+  },
+  {
+    question: "Do you work on commercial properties as well as homes?",
+    answer:
+      "We do. We provide tailored maintenance contracts and emergency response for commercial premises including restaurants, retail units, and industrial sites, alongside our residential services.",
+  },
+  {
+    question: "What areas of Devon do you cover?",
+    answer:
+      "We cover the whole of Devon, including Exeter, Plymouth, Torquay, Barnstaple, Newton Abbot, Tiverton, Exmouth, Bideford, and Tavistock, with local engineers dispatched from strategically placed teams.",
+  },
+  {
+    question: "Is your work guaranteed?",
+    answer:
+      "Yes, all our repair and unblocking work is backed by a service guarantee, and we're fully insured, so you can have complete confidence in the quality of our work.",
+  },
+];

@@ -5,6 +5,7 @@ import Intro from "@/components/Intro";
 import Services from "@/components/Services";
 import WhyUs from "@/components/WhyUs";
 import Areas from "@/components/Areas";
+import Faqs from "@/components/Faqs";
 import MobileNav from "@/components/MobileNav";
 import Footer from "@/components/Footer";
 
@@ -19,6 +20,7 @@ export default function Home() {
         <Services />
         <WhyUs />
         <Areas />
+        <Faqs />
       </main>
       <MobileNav />
       <Footer />
