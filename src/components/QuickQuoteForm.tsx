@@ -1,6 +1,8 @@
 "use client";
 
 import { FormEvent, useState } from "react";
+import Icon from "./Icon";
+import { whatsappLink } from "@/lib/constants";
 
 const PROBLEM_OPTIONS = ["Blocked Drain", "Drain Repair", "CCTV Survey", "Other"];
 
@@ -9,6 +11,21 @@ export default function QuickQuoteForm() {
 
   function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
+    const data = new FormData(event.currentTarget);
+    const name = data.get("name");
+    const phone = data.get("phone");
+    const postcode = data.get("postcode");
+    const problem = data.get("problem");
+
+    const message = [
+      "Hi, I'd like a quote for a drainage job:",
+      `Name: ${name}`,
+      `Phone: ${phone}`,
+      `Postcode: ${postcode}`,
+      `Problem: ${problem}`,
+    ].join("\n");
+
+    window.open(whatsappLink(message), "_blank", "noopener,noreferrer");
     setSubmitted(true);
   }
 
@@ -21,7 +38,8 @@ export default function QuickQuoteForm() {
 
       {submitted ? (
         <p className="font-body-md text-body-md text-on-surface-variant py-4">
-          Thanks! We&apos;ve received your request and will be in touch shortly.
+          Thanks! We&apos;ve opened WhatsApp with your quote request — just hit send and
+          we&apos;ll be in touch shortly.
         </p>
       ) : (
         <form className="space-y-4" onSubmit={handleSubmit}>
@@ -94,10 +112,11 @@ export default function QuickQuoteForm() {
           </div>
 
           <button
-            className="w-full bg-primary-container text-on-primary font-label-bold text-label-bold py-4 rounded-xl hover:bg-surface-tint transition-colors min-h-[48px] card-shadow"
+            className="w-full bg-[#25D366] text-white font-label-bold text-label-bold py-4 rounded-xl hover:bg-[#25D366]/90 transition-colors min-h-[48px] card-shadow flex items-center justify-center gap-2"
             type="submit"
           >
-            Get Quote
+            <Icon name="whatsapp" className="w-5 h-5" />
+            Send Quote Request via WhatsApp
           </button>
         </form>
       )}
