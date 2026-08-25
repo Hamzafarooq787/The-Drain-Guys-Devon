@@ -7,6 +7,7 @@ import WhyUs from "@/components/WhyUs";
 import Areas from "@/components/Areas";
 import Faqs from "@/components/Faqs";
 import MobileNav from "@/components/MobileNav";
+import FloatingContact from "@/components/FloatingContact";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -23,6 +24,7 @@ export default function Home() {
         <Faqs />
       </main>
       <MobileNav />
+      <FloatingContact />
       <Footer />
     </>
   );
