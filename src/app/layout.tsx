@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Manrope } from "next/font/google";
-import { FAQS } from "@/lib/constants";
+import { FAQS, PHONE_NUMBER } from "@/lib/constants";
 import "./globals.css";
 
 const inter = Inter({
@@ -58,7 +58,7 @@ const localBusinessSchema = {
   image: `${SITE_URL}/images/logo.webp`,
   "@id": SITE_URL,
   url: SITE_URL,
-  telephone: "01632960245",
+  telephone: PHONE_NUMBER,
   address: {
     "@type": "PostalAddress",
     addressLocality: "Devon",

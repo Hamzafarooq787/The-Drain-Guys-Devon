@@ -1,5 +1,11 @@
 export const PHONE_NUMBER = "01632960245";
 export const PHONE_DISPLAY = "01632 960 245";
+// WhatsApp requires the international format (UK country code, no leading 0).
+export const WHATSAPP_NUMBER = `44${PHONE_NUMBER.replace(/^0/, "")}`;
+
+export function whatsappLink(message: string) {
+  return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+}
 
 export const NAV_LINKS = [
   { label: "Home", href: "#home" },

@@ -1,9 +1,10 @@
 import Image from "next/image";
 import Icon from "./Icon";
 import QuickQuoteForm from "./QuickQuoteForm";
-import { PHONE_DISPLAY, PHONE_NUMBER } from "@/lib/constants";
+import { PHONE_DISPLAY, PHONE_NUMBER, whatsappLink } from "@/lib/constants";
 
 const TRUST_POINTS = ["24/7 Response", "Fixed Pricing", "Local Experts", "Fully Insured"];
+const WHATSAPP_MESSAGE = "Hi, I'd like to ask about a drainage job in Devon.";
 
 export default function Hero() {
   return (
@@ -32,13 +33,22 @@ export default function Hero() {
             24/7 specialist help for residential and commercial properties. We clear blockages
             fast and provide lasting repair solutions.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 mb-10">
+          <div className="flex flex-col sm:flex-row sm:flex-wrap gap-4 mb-10">
             <a
               className="bg-secondary-container text-on-secondary-container font-label-bold text-label-bold py-4 px-8 rounded-xl hover:bg-secondary/90 transition-colors flex items-center justify-center gap-2 card-shadow text-center min-h-[48px] active:scale-95"
               href={`tel:${PHONE_NUMBER}`}
             >
               <Icon name="phone" />
               Call {PHONE_DISPLAY}
+            </a>
+            <a
+              className="bg-[#25D366] text-white font-label-bold text-label-bold py-4 px-8 rounded-xl hover:bg-[#25D366]/90 transition-colors flex items-center justify-center gap-2 card-shadow text-center min-h-[48px] active:scale-95"
+              href={whatsappLink(WHATSAPP_MESSAGE)}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Icon name="whatsapp" className="w-5 h-5" />
+              WhatsApp Us
             </a>
             <a
               className="bg-primary text-on-primary border-2 border-outline-variant font-label-bold text-label-bold py-4 px-8 rounded-xl hover:bg-surface-tint hover:text-on-primary transition-colors flex items-center justify-center text-center min-h-[48px]"
