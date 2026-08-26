@@ -1,5 +1,5 @@
-export const PHONE_NUMBER = "01632960245";
-export const PHONE_DISPLAY = "01632 960 245";
+export const PHONE_NUMBER = "01392925907";
+export const PHONE_DISPLAY = "01392 925907";
 // WhatsApp requires the international format (UK country code, no leading 0).
 export const WHATSAPP_NUMBER = `44${PHONE_NUMBER.replace(/^0/, "")}`;
 
