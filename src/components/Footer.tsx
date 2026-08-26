@@ -7,7 +7,7 @@ const QUICK_LINKS = NAV_LINKS.filter((link) => link.href !== "#contact");
 
 export default function Footer() {
   return (
-    <footer className="bg-primary text-on-primary w-full pb-24 md:pb-0">
+    <footer className="bg-primary text-on-primary w-full">
       <div className="py-12 md:py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-12 gap-y-10 gap-x-gutter">
         <div className="md:col-span-4">
           <div className="bg-white rounded-xl p-3 inline-block mb-4">
