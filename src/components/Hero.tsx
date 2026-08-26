@@ -50,12 +50,6 @@ export default function Hero() {
               <Icon name="whatsapp" className="w-5 h-5" />
               WhatsApp Us
             </a>
-            <a
-              className="bg-primary text-on-primary border-2 border-outline-variant font-label-bold text-label-bold py-4 px-8 rounded-xl hover:bg-surface-tint hover:text-on-primary transition-colors flex items-center justify-center text-center min-h-[48px]"
-              href="#contact"
-            >
-              Request a Free Quote
-            </a>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-on-primary/80 font-body-md text-body-md">
             {TRUST_POINTS.map((point) => (
