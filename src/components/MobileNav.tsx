@@ -23,7 +23,7 @@ export default function MobileNav() {
 
   return (
     <nav
-      className={`bg-surface md:hidden fixed bottom-0 left-0 right-0 z-50 border-t border-outline-variant shadow-[0_-4px_20px_rgba(0,31,63,0.08)] pb-[env(safe-area-inset-bottom)] transition-transform duration-200 ${
+      className={`bg-surface md:hidden fixed bottom-0 left-0 right-0 z-50 border-t border-outline-variant shadow-[0_-4px_20px_rgba(11,47,115,0.08)] pb-[env(safe-area-inset-bottom)] transition-transform duration-200 ${
         hidden ? "translate-y-full" : "translate-y-0"
       }`}
     >
