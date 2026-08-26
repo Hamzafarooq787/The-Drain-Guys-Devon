@@ -15,12 +15,12 @@ export default function Header() {
       <div className="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto h-16 md:h-20">
         <a className="shrink-0" href="#home">
           <Image
-            alt="The Drain Guys Devon"
+            alt="The Drain Guys"
             src="/images/logo.webp"
-            width={1220}
-            height={337}
+            width={1000}
+            height={1000}
             priority
-            className="h-9 md:h-11 w-auto"
+            className="h-14 md:h-16 w-auto"
           />
         </a>
 
