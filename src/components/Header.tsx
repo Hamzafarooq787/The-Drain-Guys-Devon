@@ -12,7 +12,7 @@ export default function Header() {
 
   return (
     <header className="bg-surface/95 backdrop-blur-sm w-full top-0 sticky z-50 shadow-sm">
-      <div className="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto h-16 md:h-20">
+      <div className="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto h-24 md:h-28">
         <a className="shrink-0" href="#home">
           <Image
             alt="The Drain Guys"
@@ -20,7 +20,7 @@ export default function Header() {
             width={1000}
             height={1000}
             priority
-            className="h-14 md:h-16 w-auto"
+            className="h-20 md:h-24 w-auto"
           />
         </a>
 
