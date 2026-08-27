@@ -1,10 +1,9 @@
 import Image from "next/image";
 import Icon from "./Icon";
 import QuickQuoteForm from "./QuickQuoteForm";
-import { PHONE_DISPLAY, PHONE_NUMBER, whatsappLink } from "@/lib/constants";
+import { PHONE_DISPLAY, PHONE_NUMBER } from "@/lib/constants";
 
 const TRUST_POINTS = ["24/7 Response", "Fixed Pricing", "Local Experts", "Fully Insured"];
-const WHATSAPP_MESSAGE = "Hi, I'd like to ask about a drainage job in Devon.";
 
 export default function Hero() {
   return (
@@ -40,15 +39,6 @@ export default function Hero() {
             >
               <Icon name="phone" />
               Call {PHONE_DISPLAY}
-            </a>
-            <a
-              className="bg-[#25D366] text-white font-label-bold text-label-bold py-4 px-8 rounded-xl hover:bg-[#25D366]/90 transition-colors flex items-center justify-center gap-2 card-shadow text-center min-h-[48px] active:scale-95"
-              href={whatsappLink(WHATSAPP_MESSAGE)}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Icon name="whatsapp" className="w-5 h-5" />
-              WhatsApp Us
             </a>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-on-primary/80 font-body-md text-body-md">
