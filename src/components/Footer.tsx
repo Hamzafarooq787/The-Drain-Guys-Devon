@@ -56,7 +56,7 @@ export default function Footer() {
           </ul>
         </div>
 
-        <div className="md:col-span-2">
+        <div className="md:col-span-2" id="contact">
           <h4 className="font-label-bold text-label-bold mb-4 text-on-primary">Contact</h4>
           <div className="space-y-3">
             <a
