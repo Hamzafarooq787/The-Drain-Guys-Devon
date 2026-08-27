@@ -3,9 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import Icon from "./Icon";
-import { NAV_LINKS, PHONE_DISPLAY, PHONE_NUMBER, whatsappLink } from "@/lib/constants";
-
-const WHATSAPP_MESSAGE = "Hi, I'd like to ask about a drainage job in Devon.";
+import { NAV_LINKS, PHONE_DISPLAY, PHONE_NUMBER } from "@/lib/constants";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -40,24 +38,13 @@ export default function Header() {
           ))}
         </nav>
 
-        <div className="hidden md:flex items-center gap-3">
-          <a
-            className="bg-secondary-container text-on-secondary-container font-label-bold text-label-bold py-3 px-6 rounded-lg hover:bg-secondary/10 transition-colors duration-200 flex items-center gap-2 card-shadow active:scale-95"
-            href={`tel:${PHONE_NUMBER}`}
-          >
-            <Icon name="phone" />
-            Call Now
-          </a>
-          <a
-            className="bg-[#25D366] text-white font-label-bold text-label-bold py-3 px-4 rounded-lg hover:bg-[#25D366]/90 transition-colors duration-200 flex items-center gap-2 card-shadow active:scale-95"
-            href={whatsappLink(WHATSAPP_MESSAGE)}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Message us on WhatsApp"
-          >
-            <Icon name="whatsapp" className="w-5 h-5" />
-          </a>
-        </div>
+        <a
+          className="hidden md:flex bg-secondary-container text-on-secondary-container font-label-bold text-label-bold py-3 px-6 rounded-lg hover:bg-secondary/10 transition-colors duration-200 items-center gap-2 card-shadow active:scale-95"
+          href={`tel:${PHONE_NUMBER}`}
+        >
+          <Icon name="phone" />
+          Call Now
+        </a>
 
         <button
           type="button"
@@ -89,15 +76,6 @@ export default function Header() {
             >
               <Icon name="phone" />
               Call {PHONE_DISPLAY}
-            </a>
-            <a
-              className="bg-[#25D366] text-white font-label-bold text-label-bold py-3 px-6 rounded-lg flex items-center justify-center gap-2 card-shadow active:scale-95"
-              href={whatsappLink(WHATSAPP_MESSAGE)}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Icon name="whatsapp" className="w-5 h-5" />
-              WhatsApp Us
             </a>
           </nav>
         </div>

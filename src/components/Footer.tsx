@@ -1,8 +1,7 @@
 import Image from "next/image";
 import Icon from "./Icon";
-import { NAV_LINKS, PHONE_DISPLAY, PHONE_NUMBER, SERVICES, whatsappLink } from "@/lib/constants";
+import { NAV_LINKS, PHONE_DISPLAY, PHONE_NUMBER, SERVICES } from "@/lib/constants";
 
-const WHATSAPP_MESSAGE = "Hi, I'd like to ask about a drainage job in Devon.";
 const QUICK_LINKS = NAV_LINKS.filter((link) => link.href !== "#contact");
 
 export default function Footer() {
@@ -66,15 +65,6 @@ export default function Footer() {
             >
               <Icon name="phone" className="w-5 h-5 text-secondary-fixed shrink-0" />
               {PHONE_DISPLAY}
-            </a>
-            <a
-              className="flex items-center gap-3 text-on-primary hover:text-secondary-fixed transition-colors font-label-bold text-label-bold"
-              href={whatsappLink(WHATSAPP_MESSAGE)}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Icon name="whatsapp" className="w-5 h-5 text-secondary-fixed shrink-0" />
-              WhatsApp Us
             </a>
             <div className="flex items-center gap-3 text-on-primary/80 font-body-md text-body-md">
               <Icon name="location_on" className="w-5 h-5 text-secondary-fixed shrink-0" />
