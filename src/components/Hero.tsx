@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Icon from "./Icon";
-import QuickQuoteForm from "./QuickQuoteForm";
 import { PHONE_DISPLAY, PHONE_NUMBER } from "@/lib/constants";
 
 const TRUST_POINTS = ["24/7 Response", "Fixed Pricing", "Local Experts", "Fully Insured"];
@@ -8,7 +7,7 @@ const TRUST_POINTS = ["24/7 Response", "Fixed Pricing", "Local Experts", "Fully 
 export default function Hero() {
   return (
     <section
-      className="relative bg-primary-container text-on-primary min-h-[80vh] flex items-center"
+      className="relative bg-primary-container text-on-primary min-h-[70vh] flex items-center"
       id="home"
     >
       <div className="absolute inset-0 z-0">
@@ -23,8 +22,8 @@ export default function Hero() {
         />
       </div>
 
-      <div className="relative z-20 w-full px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-12 gap-gutter py-12 md:py-section-gap">
-        <div className="lg:col-span-7 flex flex-col justify-center">
+      <div className="relative z-20 w-full px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto py-16 md:py-section-gap">
+        <div className="max-w-3xl">
           <h1 className="font-headline-xl-mobile md:font-headline-xl text-headline-xl-mobile md:text-headline-xl text-on-primary mb-6">
             Fast Drain Unblocking and Repairs Across Devon
           </h1>
@@ -49,10 +48,6 @@ export default function Hero() {
               </div>
             ))}
           </div>
-        </div>
-
-        <div className="lg:col-span-5 mt-4 lg:mt-0" id="contact">
-          <QuickQuoteForm />
         </div>
       </div>
     </section>
